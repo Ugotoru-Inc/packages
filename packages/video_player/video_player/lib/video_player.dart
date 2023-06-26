@@ -533,7 +533,7 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
       // Cancel previous timer.
       _timer?.cancel();
       _timer = Timer.periodic(
-        const Duration(milliseconds: 500),
+        const Duration(milliseconds: 100),
         (Timer timer) async {
           if (_isDisposed) {
             return;
